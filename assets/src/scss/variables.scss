@@ -1,0 +1,29 @@
+// Variables Bootstrap 4
+// color
+$red:     #FF000F;
+$green:   #00AB45 ;
+$light-green:   #00B92D;
+$orange: #fca70c;
+$yellow: #ffd943;
+$violet: #7057d6;
+$purple: #555be4;
+$blue: #007BC9;
+// container size
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1800px
+);
+//fonts
+$sizeBasik: 17px;
+$colorBasik: #666;
+// transition
+$ease-out: 0.25s ease-in-out;
+
+@media (min-width: 991px){
+  .container{
+    max-width: 1140px;
+    padding-left: 80px;
+  }
+}

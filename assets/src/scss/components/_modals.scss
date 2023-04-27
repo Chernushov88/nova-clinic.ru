@@ -1,0 +1,142 @@
+.modal{
+  &-open{
+    padding: 0 !important;
+    .modal{
+
+    }
+
+  }
+  &.show {
+    .close{
+      position: absolute;
+      right: 24px;
+      top: 24px;
+    }
+    .modal{
+      &-dialog{
+        max-width: 600px;
+        margin: 10rem auto;
+        @media (max-width: 768px) {
+          max-width: 92% ;
+          margin: 5rem auto;
+        }
+      }
+
+      &-content{
+        padding: 32px 50px 28px 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 16px 32px rgba(34, 42, 55, 0.13);
+        border-radius: 16px;
+        .h2{
+          margin: 0 0 32px;
+        }
+        .item-textarea{
+          margin: 0;
+          .inp{
+            textarea{
+
+            }
+            .label{
+
+            }
+          }
+        }
+        .button-row{
+          display: flex;
+          margin-top: 32px;
+          justify-content: end;
+          .btn{
+            width: 160px;
+            height: 48px;
+            margin-left: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  &#modal_confirm-passenger-transfer{
+    .item {
+      height: 56px;
+      margin-top: 24px;
+      border-radius: 8px;
+      border: 1px solid #ddd6e1;
+    }
+  }
+}
+
+
+.modal-tooltype {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: auto;
+  padding: 24px;
+  line-height: 2.3;
+  background: #FFFFFF;
+  border-radius: 16px;
+  filter: drop-shadow(0px 8px 16px rgba(34, 42, 55, 0.13));
+  &-in{
+    position: relative;
+    min-width: 250px;
+    display: block !important;
+    &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: calc(100% + 20px);
+      z-index: 99;
+      width: 24px;
+      height: 12px;
+      left: calc(50% - 24px/2);
+      bottom: -24px;
+      background: #FFFFFF;
+      transform: translate(-50%, 0);
+      background: url(../img/svg/arr-down.svg) no-repeat;
+    }
+  }
+  &-text{
+    b{
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    p{
+
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/close.png") no-repeat;
+    cursor: pointer;
+    margin-top: 3px;
+    padding-left: 15px;
+  }
+
+}
+
+.close:hover {
+  color: #000;
+  text-decoration: none
+}
+
+.close:not(:disabled):not(.disabled):focus,.close:not(:disabled):not(.disabled):hover {
+  opacity: .75
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0
+}
+
+

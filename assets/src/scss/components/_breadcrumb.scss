@@ -1,0 +1,27 @@
+.breadcrumb {
+	margin: 0;
+	padding: 0;
+	line-height: 1.75;
+	background: transparent;
+	li {
+		a, span {
+			display: inline-block;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 16px;
+			letter-spacing: 0.02em;
+			color: #7A869A;
+		}
+		a{
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		span{
+
+			&.sep{
+				margin: 0 5px;
+			}
+		}
+	}
+}

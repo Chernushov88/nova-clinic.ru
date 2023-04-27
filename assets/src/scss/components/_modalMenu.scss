@@ -1,0 +1,223 @@
+// RESPONSIVE MENU TO 992px
+
+@media (max-width: 767px) {
+  .open {
+    transform: translateX(-300px);
+    transition-duration: 0.3s;
+    position: fixed;
+  }
+
+  .nav {
+    // position: fixed;
+    // z-index: 100;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      // .hide__mob {
+      //   display: none;
+      // }
+    }
+    .btn {
+      margin-bottom: 32px;
+    }
+    &__item {
+      padding-bottom: 8px;
+    }
+    &__link {
+      display: block;
+    }
+  }
+  .overlay {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    right: -360px;
+    background: rgba(#343a3d, 0.9);
+    z-index: 100;
+    overflow-y: scroll;
+    transition: all 0.3s linear;
+
+    .wrapper {
+      padding: 0;
+    }
+    .nav__item.list-menu {
+      .list-menu__items {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-top: 12px;
+        .list-menu__item {
+          line-height: 26px;
+        }
+      }
+      &:hover {
+        .list-menu__items {
+          position: static;
+          background-color: transparent;
+          box-shadow: none;
+          padding-top: 12px;
+          padding-left: 15px;
+          padding-bottom: 0px;
+          width: 100%;
+        }
+      }
+      &:focus {
+        .list-menu__items {
+          position: static;
+          background-color: transparent;
+          box-shadow: none;
+          padding-top: 12px;
+          padding-left: 15px;
+          padding-bottom: 0px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+body.block {
+  position: fixed;
+}
+
+#modalMenu{
+  .modal-open & .modal-content {
+    //opacity: 1;
+    //height: auto;
+  }
+  padding: 0 !important;
+  .modal-content{
+    //transition: 1s;
+    //height: 0;
+    //opacity: 0;
+  }
+  &.fadeIn {
+    //transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+    &.show {
+      opacity: 1;
+      //transform: scale(1);
+    }
+  }
+
+
+  &.show .modal{
+    &-dialog {
+      max-width: 100%;
+      margin: 43px auto 0;
+      @media (max-width: 991px) {
+        margin-top: 0;
+      }
+    }
+    &-content{
+      padding: 36px 65px 70px;
+      padding: 2% 3.4% 2%;
+      padding: 2.5% 0;
+      border-radius: 0;
+      border: 0;
+      @media (max-width:767px) {
+        padding-top: 15px;
+      }
+      body.scroll &{
+        padding: 1.5% 0;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+      .close{
+        position: static;
+        display: inline-block;
+        width: 27px;
+        opacity: 1;
+      }
+    }
+  }
+  .modalMenu-text{
+    margin-top: 70px;
+    @media (max-width: 1024px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+  .h2{
+    margin: 0 0 50px;
+    font-size: 65px;
+    line-height: 1.15;
+    @media (max-width: 1024px) {
+      margin-bottom: 30px;
+      font-size: 40px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+  }
+  .user-info{
+    display: flex;
+    li{
+      &:first-child{
+        margin-right: 30px;
+        @media (max-width: 767px) {
+          margin-right: 10px;
+        }
+      }
+      .img{
+        width: 99px;
+        overflow: hidden;
+        border-radius: 50%;
+        img{
+          max-width: 100%;
+          border-radius: 50%;
+        }
+      }
+      .h4{
+        margin: 7px 0 5px;
+        font-size: 27px;
+        @media(max-width: 767px) {
+          font-size: 15px;
+        }
+      }
+      p{
+
+      }
+    }
+  }
+  .h5{
+    margin: 30px 0 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000;
+    @media (max-width: 767px) {
+      margin: 15px 0 10px;
+    }
+  }
+  .result{
+    margin: 0;
+    >li{
+      width: 30%;
+      min-width: 260px;
+      a{
+        font-size: 20px;
+        line-height: 1.15;
+        color: #000;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+    }
+    &-in{
+      li{
+        width: 100%;
+      }
+    }
+  }
+}

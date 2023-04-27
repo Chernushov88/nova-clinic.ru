@@ -1,0 +1,87 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+
+//@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+//@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+//@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+//@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+//@import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+// Подключение нужных SCSS исходников Bootstrap 4
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_mixins";
+@import "../../../node_modules/bootstrap/scss/_root";
+@import "../../../node_modules/bootstrap/scss/_reboot";
+@import "../../../node_modules/bootstrap/scss/_type";
+//@import "../../../node_modules/bootstrap/scss/_images";
+//@import "../../../node_modules/bootstrap/scss/_code";
+@import "../../../node_modules/bootstrap/scss/_grid";
+@import "../../../node_modules/bootstrap/scss/_tables";
+@import "../../../node_modules/bootstrap/scss/_forms";
+@import "../../../node_modules/bootstrap/scss/_buttons";
+//@import "../../../node_modules/bootstrap/scss/_transitions";
+//@import "../../../node_modules/bootstrap/scss/_dropdown";
+//@import "../../../node_modules/bootstrap/scss/_button-group";
+//@import "../../../node_modules/bootstrap/scss/_input-group";
+//@import "../../../node_modules/bootstrap/scss/_custom-forms";
+//@import "../../../node_modules/bootstrap/scss/_nav";
+//@import "../../../node_modules/bootstrap/scss/_navbar";
+//@import "../../../node_modules/bootstrap/scss/_card";
+//@import "../../../node_modules/bootstrap/scss/_breadcrumb";
+//@import "../../../node_modules/bootstrap/scss/_pagination";
+//@import "../../../node_modules/bootstrap/scss/_badge";
+//@import "../../../node_modules/bootstrap/scss/_jumbotron";
+//@import "../../../node_modules/bootstrap/scss/_alert";
+//@import "../../../node_modules/bootstrap/scss/_progress";
+//@import "../../../node_modules/bootstrap/scss/_media";
+//@import "../../../node_modules/bootstrap/scss/_list-group";
+//@import "../../../node_modules/bootstrap/scss/_close";
+//@import "../../../node_modules/bootstrap/scss/_toasts";
+@import "../../../node_modules/bootstrap/scss/_modal";
+//@import "../../../node_modules/bootstrap/scss/_tooltip";
+//@import "../../../node_modules/bootstrap/scss/_popover";
+//@import "../../../node_modules/bootstrap/scss/_carousel";
+//@import "../../../node_modules/bootstrap/scss/_spinners";
+//@import "../../../node_modules/bootstrap/scss/_utilities";
+//@import "../../../node_modules/bootstrap/scss/_print";
+//@import "../../../node_modules/slick-carousel/slick/slick.css";
+//@import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+//@import "../../../node_modules/select-picker/dist/picker.css";
+
+// BASE
+@import "./base/reset";
+@import "fonts";
+//@import "./base/animation";
+@import "variables";
+@import "typography";
+
+// plugins
+//@import "./plugins/bootstrap-tagsinput";
+//@import "./plugins/owl";
+//@import "./plugins/jquery-ui.min";
+//@import "./plugins/picker";
+
+// components
+@import "./components/breadcrumb";
+@import "./components/filter";
+@import "./components/forms";
+//@import "./components/table";
+//@import "./components/burger";
+//@import "./components/modalMenu";
+//@import "./components/modals";
+//@import "./components/calendar";
+//@import "./components/animat";
+//@import "./components/mob-divise";
+
+// sections
+@import "sections/header";//@import "sections/tab";
+//@import "sections/sidebar";
+@import "sections/registration";
+
+
+// pages
+//@import "pages/";
+
+
+//
+@import "general";
