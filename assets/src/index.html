@@ -4,13 +4,66 @@
 <title>Регистрация / Доп продукты</title>
 //= template/header.html
 
-<main class="page-main">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"></div>
+<br><br><br><br><br><br><br><br><br><br>
+<section class="section section__form">
+
+  <div class="row">
+    <div class="col-md-6 col-text">
+      <div class="h2 bg-pink">МЕСТА ОГРАНИЧЕНЫ</div>
+      <div class="color-blue">Мероприятие:</div>
+      <p>Путь к малышу. День открытых дверей в Нова Клиник</p>
+      <div class="color-blue">Дата мероприятия:</div>
+      <p>16 апреля 2023 года</p>
+      <div class="color-blue">Запись:</div>
+      <p>Открыта</p>
+      <div class="color-blue">Участие в мероприятии:</div>
+      <p>Бесплатно</p>
+      <div class="color-blue">Какие документы взять с собой:</div>
+      <p>Паспорт (если планируете прием врача в день мероприятия)</p>
     </div>
+    <div class="col-md-6 col-form">
+      <h2>ЗАРЕГИСТРИРОВАТЬСЯ</h2>
+      <form class="form-horizontal" action="#">
+        <div class="form-group">
+          <label class="control-label" for="fio">Укажите Ваши ФИО</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="fio" name="fio">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="phone">Пожалуйста, укажите телефон в формате +7 (9...</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="phone" name="phone">
+            <div class="sure">*</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="email">Укажите Ваш email</label>
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" name="email">
+            <div class="sure">*</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-default">Записаться </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="personal-data">
+            <p>Я даю согласие на обработку моих</p>
+            <a href="#">персональных данных</a>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
   </div>
-</main>
+</section>
 
 //= template/footer.html
 <script>
